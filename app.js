@@ -4,9 +4,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
+const json = require('./routes/json.js');
 app.use(bodyParser.json());
 const index = require('./routes/index.js');
-
+app.use('/json',json);
+app.use('/JSON',json);
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use('/',index);
