@@ -1,10 +1,6 @@
 {
-  "name": "appengine-hello-world",
-  "description": "Simple Hello World Node.js sample for Google App Engine Standard Environment.",
-  "version": "0.0.1",
-  "private": true,
-  "license": "Apache-2.0",
-  "author": "Google Inc.",
+  "name": "kaliyugatamizha",
+
   "repository": {
     "type": "git",
     "url": "https://github.com/raghavaadi/kaliyugatamizha.git"
