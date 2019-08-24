@@ -21,6 +21,6 @@ router.get('/',function(req,res,next){
 router.post('/', urlencodedParser, function (req, res) {
 	console.log(req.body.post-text);
 	
-//  res.send('welcome, ' + req.body.user);
+	 res.send('welcome, ' + req.body.post-text);
 })
 module.exports= router;
