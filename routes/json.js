@@ -19,7 +19,7 @@ router.get('/',function(req,res,next){
 	});
 });
 router.post('/', urlencodedParser, function (req, res) {
-	console.log(req.body);
+	console.log(req.body.post-text);
 	
 //  res.send('welcome, ' + req.body.user);
 })
