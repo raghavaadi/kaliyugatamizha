@@ -14,13 +14,13 @@ router.get('/',function(req,res,next){
 });
 router.post('/', urlencodedParser, function (req, res) {
 	//console.log(req.body.post-text);
-	res=req.body.post-text;
-	console.log(JSON.stringify(res));
-	// res=req.body.post-text;
-	//  res.render('json', {
-	// 	title :'Kaliyuga Tamizha',
-	// 	name : 'Raghav',
-	// 	result: ''
-	// });
+	resp=req.body.post;
+	ren=JSON.parse(resp)
+	 res.render('json', {
+		title :'Kaliyuga Tamizha',
+		name : 'Raghav',
+		post: req.body.post,
+		result: JSON.stringify(ren, undefined, 2)
+	});
 })
 module.exports= router;
