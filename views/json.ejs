@@ -15,15 +15,20 @@
 	  <br>
 	 <div class="login-page">
 	  <div class="form">
-<form method="POST" action="/login" class="register-form">
+<form method="POST" action="/json" class="register-form">
 	<table align='center'>
 	<tr>
 		<td>Enter the JSON to beautify</td>
 	 	
 	</tr>
+	<br>
 	<tr>
-			<textarea id="wmd-input" class="wmd-input js-wz-element s-input bar0 processed" name="post-text" cols="92" rows="15" tabindex="101" data-wz-state="256" data-min-length="" spellcheck="false"></textarea>
-
+	<td>
+		<textarea id="wmd-input" class="wmd-input js-wz-element s-input bar0 processed" name="post" cols="92" rows="15" tabindex="101" data-wz-state="256" data-min-length="" spellcheck="false"></textarea>
+	</td>
+	<td>
+			<textarea id="wmd-input" class="wmd-input js-wz-element s-input bar0 processed" name="result" cols="92" rows="15" tabindex="101" data-wz-state="256" data-min-length="" spellcheck="false"><%=result%></textarea>
+		</td>
 	</tr>
 	<tr>
 		<td><input type="submit" value="submit"></td>
