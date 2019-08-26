@@ -9,6 +9,7 @@ router.get('/',function(req,res,next){
 	res.render('json',{
 		title :'Kaliyuga Tamizha',
 		name : 'Raghav',
+		post : '',
 		result: ''
 	});
 });
